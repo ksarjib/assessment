@@ -1,0 +1,27 @@
+spring:
+  h2:
+    console.enabled: true
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+
+geolocation:
+  url: http://ip-api.com/json
+
+validcountry: Canada
+
+app:
+  name: Assessment
+  api:
+    title: Assessment
+    version: 1.0.0
+    description: Spring Boot APIs description
+    base-package: com.kforce.assessment.controller
+    contact-name: sarjib karki
+    contact-email: sarjib.karki@gmail.com
+    swagger:
+      enable: true
